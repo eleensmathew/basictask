@@ -1,0 +1,822 @@
+145  git clone https://github.com/eleensmathew/MovieScreen
+  146  cd MovieScreen/
+  147  code ,
+  148  code .
+  149  source /home/eleensmathew/MovieScreen/myworld/bin/activate
+  150  deactivate
+  151  python3 -m pip install --upgrade pip
+  152  sudo python3 manage.py runserver localhost:22
+  153  cd movoe
+  154  cd movie
+  155  sudo python3 manage.py runserver localhost:22
+  156  pip3 install django-widget-tweaks 
+  157  sudo python3 manage.py runserver localhost:22
+  158  sudo python3 manage.py runserver
+  159  pip install --upgrade pip
+  160  sudo python3 manage.py runserver
+  161  source /home/eleensmathew/MovieScreen/myworld/bin/activate
+  162  sudo python manage.py runserver
+  163  sudo python3 manage.py runserver
+  164  sudo python manage.py runserver
+  165  deactivate
+  166  source myworld/bin/activate
+  167  cd ..
+  168  source myworld/bin/activate
+  169  cd movie
+  170  source myworld/bin/activate
+  171  sudo python manage.py runserver
+  172  sudo python3 manage.py runserver
+  173  sudo python manage.py makemigrations
+  174  sudo python3 manage.py makemigrations
+  175  pip3 install django-widget-tweaks 
+  176  cd ..
+  177  pip3 install django-widget-tweaks 
+  178  deactivate
+  179  pip3 install django-widget-tweaks 
+  180  pip install django-widget-tweaks
+  181  ls
+  182  rmdir -r 'MovieScreen'
+  183  rmdir -f 'MovieScreen'
+  184  rmdir 'MovieScreen'
+  185  rm -r 'MovieScreen'
+  186  y
+  187  git clone https://github.com/eleensmathew/MovieScreen mov
+  188  cd mov
+  189  code .
+  190  ssh
+  191  ssh user@ip
+  192  ssh localhost
+  193  sudo apt update
+  194  sudo apt install openssh-server
+  195  sudo systemctl status ssh
+  196  sudo systemctl  enable --now ssh
+  197  ssh localhost
+  198  sudo gedit /etc/ssh/sshd_config
+  199  sudo nano /etc/ssh/sshd_config
+  200  source myworld/bin/activate
+  201  cd MovieScreen/
+  202  source myworld/bin/activate
+  203  python manage.py runserver
+  204  cd movie
+  205  python manage.py runserver
+  206  ssh eleena@localhost
+  207  deactivate
+  208  ssh eleena@localhost
+  209  nano /etc/ssh/sshd_config
+  210  sudo nano /etc/ssh/sshd_config
+  211  ssh eleena@localhost
+  212  service sshd restart
+  213  ssh eleena@localhost
+  214  sudo nano /etc/ssh/sshd_config
+  215  service sshd restart
+  216  ssh eleena@localhost
+  217  sudo passwd
+  218  ssh eleena@localhost
+  219  sudo systemctl enable --now sshd.service
+  220  ssh localhost
+  221  ssh eleensmathew@localhost
+  222  cd
+  223  cd M
+  224  cd MovieScreen/
+  225  source myworld/bin/activate
+  226  python manage.py runserver eleensmathew@localhost:22
+  227  ifconfig
+  228  sudo apt install net-tools
+  229  ifconfig
+  230  python manage.py runserver 127.0.0.1:22
+  231  cd movie
+  232  python manage.py runserver 127.0.0.1:22
+  233  sudo python manage.py runserver 127.0.0.1:22
+  234  python manage.py runserver 127.0.0.1:22
+  235  python manage.py runserver eleensmathew@localhost:22
+  236  python manage.py runserver localhost:22
+  237  sudo python manage.py runserver localhost:22
+  238  sudo python3 manage.py runserver localhost:22
+  239  pip install django-widget-tweaks
+  240  sudo python3 manage.py runserver localhost:22
+  241  deactivate
+  242  pip install django-widget-tweaks
+  243  deactivate
+  244  pip install django-widget-tweaks
+  245  python3 -m pip install --upgrade pip
+  246  sudo python3 manage.py runserver localhost:22
+  247  pip install django-widget-tweaks
+  248  sudo python3 manage.py runserver localhost:22
+  249  cd mov
+  250  cd movie
+  251  sudo python3 manage.py runserver localhost:22
+  252  sudo python3 manage.py runsnserver
+  253  python3 manage.py runsnserver
+  254  python3 manage.py runserver
+  255  sudo python3 manage.py runserver
+  256  python3 manage.py runserver
+  257  python3 manage.py runserver localhosost:22
+  258  python3 manage.py runserver localhost:22
+  259  sudo pip install django-widget-tweaks
+  260  sudo python3 manage.py runserver
+  261  sudo pip install crispy-bootstrap4
+  262  sudo python3 manage.py runserver
+  263  sudo pip install allauth
+  264  sudo python -m pip install allauth
+  265  sudo python3 -m pip install allauth
+  266  sudo python -m pip install django-allauth
+  267  sudo python3 -m pip install django-allauth
+  268  sudo python3 manage.py run
+  269  sudo python3 manage.py runserver
+  270  sudo pip install tmdbv3api
+  271  sudo python3 manage.py runserver
+  272  sudo python3 manage.py makemigrations
+  273  sudo python3 manage.py migrate
+  274  python3 manage.py runserver localhost:22
+  275  psudo python3 manage.py runserver localhost:22
+  276  sudo python3 manage.py runserver localhost:22
+  277  sudo fuser -k 22/tcp
+  278  sudo python3 manage.py runserver localhost:22
+  279  cd mov
+  280  cd movie
+  281  sudo python3 manage.py runserver localhost:22
+  282  sudo fuser -k 22/tcp
+  283  pip install gunicorn
+  284  source myworld/bin/activate
+  285  pip install gunicorn
+  286  sudo python manage.py runserver 0.0.0.0:80
+  287  sudo python3  manage.py runserver 0.0.0.0:80
+  288  cd movie
+  289  sudo python3  manage.py runserver 0.0.0.0:80
+  290  sudo fuser -k 80/tcp
+  291  sudo python3  manage.py runserver 0.0.0.0:80
+  292  cd ...
+  293  cd ..
+  294  django-admin startproject textutils ~/mov
+  295  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  296  gunicorn --bind 127.0.0.1:80 textutils.wsgi
+  297  sudo fuser -k 80/tcp
+  298  gunicorn --bind 127.0.0.1:80 textutils.wsgi
+  299  sudo ufw allow 8000
+  300  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  301  gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  302  gunicorn --bind 0.0.0.0:8000 mov.wsgi
+  303  gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  304  cd movie
+  305  gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  306  sudo gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  307  gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  308  deactivate
+  309  sudo nano /etc/systemd/system/gunicorn.socket
+  310  sudo nano /etc/systemd/system/gunicorn.service
+  311  pwd
+  312  sudo nano /etc/systemd/system/gunicorn.service
+  313  sudo systemctl start gunicorn.socket
+  314  sudo systemctl enable gunicorn.socket
+  315  sudo nano /etc/nginx/sites-available/textutils
+  316  sudo vim /etc/nginx/sites-available/movie
+  317  sudo nano /etc/nginx/sites-available/movie
+  318  sudo ln -s /etc/nginx/sites-available/movie /etc/nginx/sites-enabled/
+  319  sudo systemctl restart nginx
+  320  gunicorn --bind 0.0.0.0:8000 movie.wsgi
+  321  sudo nano /etc/nginx/sites-available/movie
+  322  sudo systemctl start gunicorn.socket
+  323  sudo nano /etc/systemd/system/gunicorn.service
+  324  sudo systemctl start gunicorn.socket
+  325  sudo systemctl enable gunicorn.socket
+  326  sudo nano /etc/nginx/sites-available/movie
+  327  sudo ln -s /etc/nginx/sites-available/movie /etc/nginx/sites-enabled/
+  328  sudo systemctl restart nginx
+  329  sudo nano /etc/systemd/system/gunicorn.socket
+  330  sudo nano /etc/systemd/system/gunicorn.service
+  331  sudo systemctl start gunicorn.socket
+  332  sudo systemctl enable gunicorn.socket
+  333  sudo systemctl status gunicorn.socket
+  334  sudo journalctl -u gunicorn.socket
+  335  sudo systemctl status gunicorn.socket
+  336  sudo nano /etc/nginx/sites-available/movie
+  337  sudo ln -s /etc/nginx/sites-available/movie /etc/nginx/sites-enabled/
+  338  sudo nginx -t
+  339  sudo systemctl restart nginx
+  340  sudo ufw delete allow 8000
+  341  sudo ufw allow 'Nginx Full'
+  342  sudo systemctl start gunicorn.socket
+  343  sudo nano /etc/nginx/sites-available/movie
+  344  sudo systemctl restart nginx
+  345  sudo nginx -t
+  346  sudo systemctl restart nginx
+  347  sudo ufw allow 8000
+  348  cd 
+  349  cd basic
+  350  mkdir basic
+  351  sudo apt install python3-pip python3-dev nginx
+  352  cd basic
+  353  sudo pip3 install virtualenv
+  354  virtualenv env
+  355  source env/bin/activate
+  356  pip install django gunicorn
+  357  django-admin startproject textutils ~/projectdir
+  358  django-admin startproject textutils ~/basic
+  359  sudo ufw allow 8000
+  360  code .
+  361  manage.py runserver 0.0.0.0:8000
+  362  python manage.py runserver 0.0.0.0:8000
+  363  python manage.py runserver 0.makemigrations
+  364  python manage.py runserver makemigrations
+  365  python manage.py makemigrations
+  366  python manage.py migrate
+  367  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  368  deactivate
+  369  sudo vim /etc/systemd/system/gunicorn.socket
+  370  sudo nano /etc/systemd/system/gunicorn.service
+  371  sudo systemctl start gunicorn.socket
+  372  sudo systemctl enable gunicorn.socket
+  373  sudo nano /etc/nginx/sites-available/textutils
+  374  sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
+  375  sudo systemctl restart nginx
+  376  cd /etc/nginx
+  377  ls
+  378  sudo nano nginx.conf
+  379  sudo systemctl restart nginx
+  380  sudo systemctl status nginx.service
+  381  sudo nano nginx.conf
+  382  sudo systemctl restart nginx
+  383  sudo systemctl status nginx.service
+  384  sudo nano /etc/nginx/sites-available/textutils
+  385  sudo systemctl restart nginx
+  386  sudo nano /etc/nginx/sites-available/textutils
+  387  sudo systemctl restart nginx
+  388  sudo systemctl status nginx.service
+  389  sudo nano /etc/nginx/sites-available/textutils
+  390  sudo systemctl restart nginx
+  391  sudo nano /etc/nginx/sites-available/textutils
+  392  sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
+  393  sudo systemctl restart nginx
+  394  cd
+  395  cd basic
+  396  code .
+  397  ip a
+  398  sudo systemctl restart nginx
+  399  sudo nano /etc/nginx/sites-available/textutils
+  400  sudo systemctl restart nginx
+  401  systemctl status nginx.service
+  402  cd movie
+  403  source myworld/bin
+  404  python3 manage.py makemigrations
+  405  pip install tmdbv3api
+  406  python3 manage.py makemigrations
+  407  python3 manage.py runserver
+  408  ssh eleensmathew@localhost
+  409  sudo python3 manage.py runserver localhost:22
+  410  sudo fuser -k 22/tcp
+  411  sudo python3 manage.py runserver localhost:22
+  412  ssh eleensmathew@localhost
+  413  python manage.py runserver eleensmathew@localhost:22
+  414  sudo python3 manage.py runserver eleensmathew@localhost:22
+  415  sudo python3 manage.py runserver localhost:22
+  416  cd
+  417  apt-get install nginx
+  418  systemctl status nginx
+  419  sudo apt-get install nginx
+  420  systemctl status nginx
+  421  ufw allow 22
+  422  ufw allow 80
+  423  sudo ufw allow 80
+  424  ps aux | grep nginx
+  425  nano nginx.conf
+  426  ls
+  427  cd /etc/nginx
+  428  nano nginx.conf
+  429  sudo nano nginx.conf
+  430  cd sites-enabled
+  431  cd ../sites-available
+  432  touch mysite
+  433  sudo touch mysite
+  434  nano mysite
+  435  sudo touch mysite
+  436  sudo nano  mysite
+  437  ln -s /etc/nginx/sites-available/mysite /etc/nginx/sites-enabled/
+  438  sudo ln -s /etc/nginx/sites-available/mysite /etc/nginx/sites-enabled/
+  439  ls
+  440  cd
+  441  cd /var/www
+  442  ls
+  443  mkdir mysite
+  444  sudo mkdir mysite
+  445  nano index.html
+  446  sudo nano index.html
+  447  cd
+  448  nginx -t
+  449  cd /etc/nginx
+  450  cd sites-available
+  451  sudo nano  mysite
+  452  cd
+  453  nginx -t
+  454  sudo nginx -t
+  455  systemctl restart nginx
+  456  sudo systemctl restart nginx
+  457  ufw allow 80
+  458  sudo ufw allow 80
+  459  cd /etc/nginx
+  460  cd sites-available
+  461  sudo nano  mysite
+  462  cd
+  463  nginx -t
+  464  sudo nginx -t
+  465  cd /etc/nginx
+  466  cd sites-available
+  467  sudo nano  mysite
+  468  cd
+  469  sudo nginx -t
+  470  service nginx restart
+  471  sudo service nginx restart
+  472  sudo service nginx status
+  473  source myworld/bin/activate
+  474  cd mov
+  475  source myworld/bin/activate
+  476  pip install gunicorn
+  477  i[ a
+  478  ip a
+  479  cd
+  480  cat /etc/netplan/
+  481  cd /etc/netplan/
+  482  ls
+  483  ls -a
+  484  ls
+  485  sudo nano 01-hello.yaml
+  486  traceroute -I 188.150.14.26
+  487  curl -4 icanhazip.com
+  488  traceroute -I 152.58.129.14
+  489  sudo apt install traceroute  
+  490  traceroute -I 152.58.129.14
+  491  sudo ufw app list
+  492  sudo ufw allow 'Nginx Full'
+  493  sudo ufw status
+  494  sudo systemctl status nginx
+  495  sudo nano /etc/nginx/sites-available/textutils
+  496  sudo systemctl status nginx
+  497  ps -ef | grep cr[o]n
+  498  curl
+  499  curl --help
+  500  cd
+  501  mkdir duckdns
+  502  cd duckdns
+  503  vi duck.sh
+  504  nano duck.sh
+  505  chmod 700 duck.sh
+  506  crontab -e
+  507  ./duck.sh
+  508  cat duck.log
+  509  cd
+  510  apt-get install lynx -y
+  511  sudo apt-get install lynx -y
+  512  lynx http://www.softether-download.com/files/softether/
+  513  ls
+  514  ls -a
+  515  lynx http://www.softether-download.com/files/softether/
+  516  ls -a
+  517  lynx http://www.softether-download.com/files/softether/
+  518  ls
+  519  tar xzvf softether-vpnserver-v1.00-9026-rc2-2013.03.10-linux-x64-64bit.tar.gz
+  520  sudo apt-get install build-essential -y
+  521  cd vpnserver
+  522  make
+  523  cd ..
+  524  mv vpnserver /usr/local
+  525  cd /usr/local/vpnserver/
+  526  sudo mv vpnserver /usr/local
+  527  cd /usr/local/vpnserver/
+  528  chmod 600 *
+  529  chmod 700 vpnserver
+  530  chmod 700 vpncmd
+  531  sudo chmod 600 *
+  532  sudo chmod 700 vpnserver
+  533  sudo chmod 700 vpncmd
+  534  chmod 600 *
+  535  chmod 700 vpnserver
+  536  chmod 700 vpncmd
+  537  ls
+  538  cd ..
+  539  cd
+  540  ls
+  541  cd /usr/local/vpnserver/
+  542  make
+  543  chmod 600 *
+  544  chmod 700 vpnserver
+  545  chmod 700 vpncmd
+  546  vi /etc/init.d/vpnserver
+  547  sudo nano  /etc/init.d/vpnserver
+  548  mkdir /var/lock/subsys
+  549  chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
+  550  sudo chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
+  551  update-rc.d vpnserver defaults
+  552  sudo update-rc.d vpnserver defaults
+  553  ./vpncmd
+  554  cd
+  555  sudo apt-get install build-essential -y
+  556  cd vpnserver
+  557  cd /usr/local/vpnserver/
+  558  ls
+  559  chmod 600 *
+  560  chmod 700 vpnserver
+  561  chmod 700 vpncmd
+  562  yum groupinstall "Development Tools"
+  563  cd
+  564  cd basic
+  565  ls
+  566  mv softether-vpnserver-v4.43-9799-beta-2023.08.31-linux-x64-64bit.tar.gz ..
+  567  ls
+  568  cd
+  569  tar xzvf softether-vpnserver-v4.43-9799-beta-2023.08.31-linux-x64-64bit.tar.gz 
+  570  sudo apt-get install build-essential -y
+  571  cd vpnserver
+  572  make
+  573  cd ..
+  574  mv vpnserver /usr/local
+  575  cd /usr/local/vpnserver/
+  576  sudo mv vpnserver /usr/local
+  577  cd
+  578  sudo mv vpnserver /usr/local
+  579  sudo mv vpnserver /usr/local --force
+  580  rm -r /usr/local/vpnserver
+  581  sudo rm -r /usr/local/vpnserver
+  582  sudo mv vpnserver /usr/local --force
+  583  cd ..
+  584  mv vpnserver /usr/local
+  585  cd /usr/local/vpnserver/
+  586  chmod 600 *
+  587  chmod 700 vpnserver
+  588  chmod 700 vpncmd
+  589  sudo nano /etc/init.d/vpnserver
+  590  cd
+  591  chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
+  592  sudo chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
+  593  sudo chmod 755 /etc/init.d/vpnserver && sudo /etc/init.d/vpnserver start
+  594  update-rc.d vpnserver defaults
+  595  sudo update-rc.d vpnserver defaults
+  596  cd /usr/local/vpnserver
+  597  ./vpncmd
+  598  npx kill-port 443
+  599  ./vpncmd
+  600  cd 
+  601  cd duckdns
+  602  cat duck.log
+  603  nano duck.sh
+  604  cat duck.log
+  605  nano duck.sh
+  606  chmod 700 duck.sh
+  607  crontab -e
+  608  ./duck.sh
+  609  cat duck.log
+  610  nano duck.sh
+  611  echo url="https://www.duckdns.org/update?domains=eleena&token=
+  612  67d64534-ccec-4aa3-a71f-78aac6abbe5f=" | curl -v -k -o ~/duckdns/duck.log -K -
+  613  echo url="https://www.duckdns.org/update?domains=eleena&token=
+  614  67d64534-ccec-4aa3-a71f-78aac6abbe5f=" | curl -v -k -o ~/duckdns/duck.log -K -
+  615  nano duck.sh
+  616  cat duck.log
+  617  echo url="https://www.duckdns.org/update?domains=eleena&token=
+  618  67d64534-ccec-4aa3-a71f-78aac6abbe5f=" | curl -v -k -o ~/duckdns/duck.log -K -
+  619  nano duck.sh
+  620  ./duck.sh
+  621  nano duck.sh
+  622  cd
+  623  ifconfig
+  624  cd basic
+  625  python3 manage.py runserver 
+  626  python3 manage.py runserver 0.0.0.0:5000
+  627  sudo nano /etc/nginx/sites-available/default
+  628  sudo systemctl restart nginx
+  629  python3 manage.py runserver 0.0.0.0:80
+  630  sudo python3 manage.py runserver 0.0.0.0:80
+  631  sudo lsof -t -i:80
+  632  sudo kill -9 `sudo lsof -t -i:80`
+  633  sudo lsof -t -i:80
+  634  sudo python3 manage.py runserver 0.0.0.0:80
+  635  curl http://localhost
+  636  sudo kill -9 `sudo lsof -t -i:80`
+  637  curl http://localhost
+  638  sudo systemctl status nginx
+  639  sudo systemctl restart nginx
+  640  sudo systemctl status nginx
+  641  sudo nano /etc/nginx/sites-available/default
+  642  cd /var/www/html
+  643  ls
+  644  cat <index.nginx-debian.html 
+  645  sudo nano index.nginx-debian.html 
+  646  sudo systemctl restart nginx
+  647  sudo systemctl status nginx
+  648  curl http://localhost
+  649  sudo nano /etc/nginx/sites-available/default
+  650  sudo systemctl restart nginx
+  651  sudo nano /etc/nginx/sites-available/default
+  652  sudo systemctl restart nginx
+  653  systemctl status nginx.service
+  654  sudo nano /etc/nginx/sites-available/default
+  655  sudo systemctl restart nginx
+  656  systemctl status nginx.service
+  657  sudo nano /etc/nginx/sites-available/default
+  658  sudo systemctl restart nginx
+  659  systemctl status nginx.service
+  660  sudo nano /etc/nginx/sites-available/default
+  661  ufw allow OpenSSH
+  662  sudo ufw allow OpenSSH
+  663  ufw enable
+  664  sudo ufw enable
+  665  cd
+  666  sudo ufw enable
+  667  ufw status
+  668  sudo ufw status
+  669  cd basic
+  670  source env/bin/activate
+  671  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  672  manage.py runserver 0.0.0.0:80
+  673  python3 manage.py runserver 0.0.0.0:80
+  674  sudo python3 manage.py runserver 0.0.0.0:80
+  675  sudo python3 manage.py runserver 0.0.0.0
+  676  sudo kill -9 `sudo lsof -t -i:80`
+  677  sudo python3 manage.py runserver 0.0.0.0:80
+  678  gunicorn --bind 0.0.0.0:80 textutils.wsgi
+  679  sudo kill -9 `sudo lsof -t -i:80`
+  680  gunicorn --bind 0.0.0.0:80 textutils.wsgi
+  681  sudo vim /etc/systemd/system/gunicorn.service
+  682  sudo systemctl start gunicorn.socket
+  683  sudo systemctl enable gunicorn.socket
+  684  sudo nano /etc/nginx/sites-available/textutils
+  685  sudo ln -s /etc/nginx/sites-available/textutils /etc/nginx/sites-enabled/
+  686  sudo systemctl restart nginx
+  687  sudo nano /etc/nginx/sites-available/textutils
+  688  sudo nano /etc/nginx/sites-available/default
+  689  sudo systemctl restart nginx
+  690  systemctl status nginx.service
+  691  sudo nano /etc/nginx/sites-available/default
+  692  sudo systemctl restart nginx
+  693  sudo nano /etc/nginx/sites-available/default
+  694  sudo systemctl restart nginx
+  695  sudo adduser basic
+  696  gunicorn --bind 0.0.0.0:8000 basic
+  697  gunicorn --bind 0.0.0.0:8000 textutils
+  698  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  699  sudo mkdir /var/log/gunicorn
+  700  sudo nano /etc/systemd/system/gunicorn.socket
+  701  sudo nano /etc/systemd/system/gunicorn.service
+  702  sudo sytem start gunicorn.socket
+  703  sudo sytemctl start gunicorn.socket
+  704  sudo apt update
+  705  sudo apt install systemd
+  706  systemctl --version
+  707  sudo sytemctl start gunicorn.socket
+  708  sudo systemctl start gunicorn.socket
+  709  sudo systemctl enable  gunicorn.socket
+  710  sudo systemctl start gunicorn.socket
+  711  sudo systemctl enable  gunicorn.socket
+  712  sudo systemctl status  gunicorn.socket
+  713  sudo journalctl -u gunicorn
+  714  sudo nano /etc/nginx/sites-available/basic
+  715  sudo systemctl restart nginx
+  716  sudo tail -F /var/log/nginx/error.log
+  717  sudo nano /etc/nginx/sites-enabled/default
+  718  sudo tail -F /var/log/nginx/error.log
+  719  sudo systemctl restart nginx
+  720  sudo tail -F /var/log/nginx/error.log
+  721  sudo nano /etc/nginx/sites-enabled/default
+  722  sudo systemctl restart nginx
+  723  sudo tail -F /var/log/nginx/access.log
+  724  sudo -u www-data stat /home/eleensmathew/basic
+  725  sudo -u www-data stat /home/eleensmathew/basic/static
+  726  sudo gpasswd -a www-data basic
+  727  sudo -u www-data stat /home/eleensmathew/basic/static
+  728  sudo nginx -s reload
+  729  sudo systemctl restart nginx
+  730  sudo tail -F /var/log/nginx/error.log
+  731  sudo nano /etc/nginx/sites-enabled/default
+  732  sudo systemctl restart nginx
+  733  sudo ufw allow 'Nginx Full'
+  734  sudo systemctl status nginx
+  735  sudo tail -F /var/log/nginx/access.log
+  736  sudo nginx -s reload
+  737  sudo tail -F /var/log/nginx/access.log
+  738  sudo nano /etc/nginx/sites-available/basic
+  739  sudo ln -s /etc/nginx/sites-available/basic /etc/nginx/sites-enabled
+  740  sudo nginx -t
+  741  sudo systemctl restart nginx
+  742  sudo systemctl status nginx
+  743  sudo tail -F /var/log/nginx/access.log
+  744  sudo nano /etc/nginx/sites-available/default
+  745  sudo systemctl restart nginx
+  746  sudo systemctl status nginx
+  747  sudo tail -F /var/log/nginx/access.log
+  748  sudo tail -F /var/log/nginx/error.log
+  749  sudo systemctl status nginx
+  750  sudo tail -F /var/log/nginx/error.log
+  751  sudo tail -F /var/log/nginx/access.log
+  752  grep -r mydomain.com /etc/nginx/sites-enabled/*
+  753  grep -r 172.28.32.1 /etc/nginx/sites-enabled/*
+  754  grep -r 172.28.38.141 /etc/nginx/sites-enabled/*
+  755  sudo nano /etc/nginx/sites-enabled/default
+  756  sudo systemctl status nginx
+  757  sudo tail -F /var/log/nginx/error.log
+  758  sudo systemctl restart nginx
+  759  gunicorn --bind 0.0.0.0:8000 basic.wsgi
+  760  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  761  sudo systemctl start gunicorn.socket
+  762  sudo systemctl enable gunicorn.socket
+  763  sudo systemctl status gunicorn.socket
+  764  sudo systemctl status gunicorn
+  765  sudo systemctl daemon-reload
+  766  sudo systemctl restart gunicorn
+  767  sudo systemctl status gunicorn.socket
+  768  sudo systemctl status gunicorn
+  769  sudo systemctl daemon-reload
+  770  sudo systemctl restart gunicorn
+  771  sudo systemctl status gunicorn.socket
+  772  sudo systemctl status gunicorn
+  773  sudo journalctl -u gunicorn
+  774  sudo systemctl daemon-reload
+  775  sudo systemctl restart gunicorn
+  776  sudo systemctl start gunicorn.socket
+  777  sudo systemctl enable gunicorn.socket
+  778  sudo systemctl status gunicorn.socket
+  779  sudo systemctl status gunicorn
+  780  sudo nano /etc/systemd/system/gunicorn.service
+  781  sudo systemctl daemon-reload
+  782  sudo systemctl restart gunicorn
+  783  sudo systemctl status gunicorn.socket
+  784  sudo systemctl status gunicorn
+  785  pip install gunicorn==20.0.2
+  786  systemctl daemon-reload
+  787  sudo systemctl daemon-reload
+  788  sudo systemctl status gunicorn.socket
+  789  sudo nano /etc/systemd/system/gunicorn.socket
+  790  systemctl daemon-reload
+  791  sudo systemctl daemon-reload
+  792  sudo systemctl status gunicorn.socket
+  793  sudo systemctl status gunicorn
+  794  sudo nano /etc/systemd/system/gunicorn.socket
+  795  sudo systemctl start gunicorn.socket
+  796  sudo systemctl enable gunicorn.socket
+  797  systemctl daemon-reload
+  798  sudo systemctl daemon-reload
+  799  sudo systemctl start gunicorn.socket
+  800  sudo systemctl enable gunicorn.socket
+  801  sudo systemctl status gunicorn.socket
+  802  sudo systemctl status gunicorn
+  803  sudo systemctl daemon-reload
+  804  sudo systemctl restart gunicorn
+  805  sudo systemctl status gunicorn.socket
+  806  sudo systemctl status gunicorn
+  807  sudo journalctl -u gunicorn
+  808  sudo nano /etc/nginx/sites-available/django
+  809  sudo journalctl -u gunicorn
+  810  gunicorn --bind 0.0.0.0:8000 textutils.wsgi
+  811  sudo systemctl start gunicorn.socket
+  812  sudo systemctl enable gunicorn.socket
+  813  sudo systemctl status gunicorn.socket
+  814  sudo systemctl status gunicorn
+  815  sudo systemctl daemon-reload
+  816  sudo systemctl restart gunicorn
+  817  sudo systemctl status gunicorn.socket
+  818  sudo systemctl status gunicorn
+  819  sudo nano /etc/nginx/sites-available/django
+  820  sudo nano /etc/systemd/system/gunicorn.service
+  821  sudo systemctl daemon-reload
+  822  sudo systemctl restart gunicorn
+  823  sudo systemctl status gunicorn.socket
+  824  sudo systemctl status gunicorn
+  825  sudo gpasswd -a www-data eleensmathew
+  826  sudo systemctl status gunicorn
+  827  cd
+  828  mkdir news
+  829  cd news 
+  830  code .
+  831  django-admin startproject mysite
+  832  source env/bin/activate
+  833  sudo nano /etc/systemd/system/gunicorn.socket
+  834  sudo nano /etc/systemd/system/gunicorn.service
+  835  sudo systemctl start gunicorn.socket
+  836  sudo systemctl enable gunicorn.socket
+  837  sudo systemctl daemon-reload
+  838  sudo systemctl restart gunicorn
+  839  sudo apt-get install nginx
+  840  sudo systemctl status gunicorn
+  841  pip install gunicorn
+  842  gunicorn --bind 0.0.0.0:8000 mysite.wsgi
+  843  cd mysite
+  844  gunicorn --bind 0.0.0.0:8000 mysite.wsgi
+  845  pip install django
+  846  gunicorn --bind 0.0.0.0:8000 mysite.wsgi
+  847  sudo mkdir /var/log/gunicorn
+  848  sudo nano /etc/systemd/system/gunicorn.service
+  849  sudo systemctl start gunicorn.socket
+  850  sudo systemctl enable gunicorn.socket
+  851  sudo systemctl status gunicorn.socket
+  852  sudo systemctl status gunicorn
+  853  source /home/eleensmathew/news/env/bin/activate
+  854  which gunicorn
+  855  sudo systemctl status gunicorn
+  856  source /home/eleensmathew/news/env/bin/activate
+  857  which gunicorn
+  858  sudo nano /etc/systemd/system/gunicorn.service
+  859  sudo systemctl status gunicorn
+  860  systemctl daemon-reload
+  861  sudo systemctl daemon-reload
+  862  sudo systemctl status gunicorn
+  863  pip install gunicorn
+  864  source /home/eleensmathew/news/env/bin/activate
+  865  which gunicorn
+  866  sudo systemctl daemon-reload
+  867  sudo systemctl start gunicorn
+  868  sudo systemctl status gunicorn
+  869  sudo nano /etc/systemd/system/gunicorn.service
+  870  sudo systemctl daemon-reload
+  871  sudo systemctl start gunicorn
+  872  sudo systemctl status gunicorn
+  873  sudo chmod 755 /run
+  874  sudo touch /run/gunicorn.sock
+  875  sudo chmod 666 /run/gunicorn.sock
+  876  sudo chown -R user:eleensmathew /run/gunicorn.sock
+  877  sudo chown -R eleensmathew:eleensmathew /run/gunicorn.sock
+  878  sudo systemctl start gunicorn
+  879  sudo systemctl status gunicorn
+  880  sudo mkdir /run
+  881  --bind unix:/home/eleensmathew/gunicorn.sock
+  882  sudo nano /etc/systemd/system/gunicorn.service
+  883  sudo systemctl daemon-reload
+  884  sudo systemctl start gunicorn
+  885  sudo systemctl status gunicorn
+  886  sudo nano /etc/nginx/sites-available/news
+  887  sudo ln -s /etc/nginx/sites-available/news /etc/nginx/sites-enabled
+  888  sudo nano /etc/nginx/sites-available/news
+  889  sudo ln -s /etc/nginx/sites-available/news /etc/nginx/sites-enabled
+  890  sudo nano /etc/nginx/nginx.conf
+  891  grep -r "server_name 172.28.38.141" /etc/nginx/sites-enabled/
+  892  grep -r "172.28.38.141" /etc/nginx/sites-enabled/
+  893  grep -r 172.28.38.141 /etc/nginx/sites-enabled/
+  894  ls /etc/nginx/sites-enabled/
+  895  rm -r  /etc/nginx/sites-enabled/basic
+  896  sudo rm -r  /etc/nginx/sites-enabled/basic
+  897  sudo rm -r  /etc/nginx/sites-enabled/movie
+  898  sudo rm -r  /etc/nginx/sites-enabled/textutils
+  899  sudo systemctl restart nginx
+  900  sudo ufw allow 'Nginx Full'
+  901  sudo systemctl status nginx
+  902  sudo tail -F /var/log/nginx/access.log
+  903  sudo nginx -t
+  904  ls /etc/nginx/sites-enabled/
+  905  sudo rm -r  /etc/nginx/sites-enabled/mysite
+  906  sudo nginx -t
+  907  sudo nano  /etc/nginx/sites-enabled/default
+  908  grep -r "server_name 172.28.38.141" /etc/nginx/
+  909  sudo nano  /etc/nginx/sites-enabled/news
+  910  sudo nginx -t
+  911  sudo systemctl reload nginx
+  912  sudo tail /var/log/nginx/error.log
+  913  sudo systemctl status gunicorn
+  914  sudo systemctl start gunicorn
+  915  ls /run/gunicorn.sock
+  916  ls -l /run/gunicorn.sock
+  917  sudo nano /etc/systemd/system/gunicorn.socket
+  918  sudo nano /etc/systemd/system/gunicorn.service 
+  919  unix:/home/eleensmathew/gunicorn.sock
+  920  ls /gunicorn.sock
+  921  ls /eleensmathew
+  922  sudo nginx -t
+  923  sudo systemctl reload nginx
+  924  sudo systemctl restart gunicorn
+  925  sudo nano /etc/nginx/sites-enabled/default
+  926  sudo systemctl restart gunicorn
+  927  sudo systemctl reload nginx
+  928  sudo nginx -t
+  929  sudo nano /etc/nginx/sites-enabled/news
+  930  sudo nginx -t
+  931  sudo systemctl reload nginx
+  932  cd ..
+  933  code .
+  934  cd
+  935  cd movie
+  936  cd mov
+  937  code .
+  938  cd
+  939  cd news
+  940  cd mysite
+  941  python3 manage.py runserver
+  942  python3 manage.py make migrations
+  943  python3 manage.py makemigrations
+  944  python3 manage.py migrate
+  945  python3 manage.py runserver
+  946  sudo systemctl restart gunicorn
+  947  sudo chmod +x redploy.sh
+  948  cd ..
+  949  sudo chmod +x redploy.sh
+  950  ls
+  951  sudo chmod +x redeploy.sh
+  952  ./redeploy.sh
+  953  git init
+  954  git add .
+  955  git commit -m 'made the thing'
+  956  git push
+  957  git remote add origin https://github.com/eleensmathew/basictask.git
+  958  git branch -M main
+  959  git push -u origin main
+  960  git add .
+  961  git commit -m 'made the thing'
+  962  ./redeploy.sh
+  963  git add .
+  964  git commit -m 'made the script better'
+  965  git push
+  966  history
