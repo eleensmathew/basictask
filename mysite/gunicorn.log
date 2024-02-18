@@ -1,0 +1,44 @@
+[2024-02-18 12:53:35 +0530] [21044] [INFO] Starting gunicorn 21.2.0
+[2024-02-18 12:53:35 +0530] [21044] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (21044)
+[2024-02-18 12:53:35 +0530] [21044] [INFO] Using worker: sync
+[2024-02-18 12:53:35 +0530] [21046] [INFO] Booting worker with pid: 21046
+[2024-02-18 12:53:35 +0530] [21047] [INFO] Booting worker with pid: 21047
+[2024-02-18 12:53:35 +0530] [21048] [INFO] Booting worker with pid: 21048
+[2024-02-18 12:59:02 +0530] [21044] [INFO] Handling signal: term
+[2024-02-18 07:29:02 +0000] [21046] [INFO] Worker exiting (pid: 21046)
+[2024-02-18 07:29:02 +0000] [21047] [INFO] Worker exiting (pid: 21047)
+[2024-02-18 07:29:02 +0000] [21048] [INFO] Worker exiting (pid: 21048)
+[2024-02-18 12:59:45 +0530] [23327] [INFO] Starting gunicorn 21.2.0
+[2024-02-18 12:59:45 +0530] [23327] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (23327)
+[2024-02-18 12:59:45 +0530] [23327] [INFO] Using worker: sync
+[2024-02-18 12:59:45 +0530] [23329] [INFO] Booting worker with pid: 23329
+[2024-02-18 12:59:45 +0530] [23330] [INFO] Booting worker with pid: 23330
+[2024-02-18 12:59:45 +0530] [23331] [INFO] Booting worker with pid: 23331
+[2024-02-18 07:34:58 +0000] [23330] [INFO] Worker exiting (pid: 23330)
+[2024-02-18 13:04:59 +0530] [23327] [INFO] Handling signal: term
+[2024-02-18 07:34:58 +0000] [23331] [INFO] Worker exiting (pid: 23331)
+[2024-02-18 07:34:58 +0000] [23329] [INFO] Worker exiting (pid: 23329)
+[2024-02-18 13:04:59 +0530] [23327] [INFO] Shutting down: Master
+[2024-02-18 13:05:13 +0530] [25141] [INFO] Starting gunicorn 21.2.0
+[2024-02-18 13:05:13 +0530] [25141] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (25141)
+[2024-02-18 13:05:13 +0530] [25141] [INFO] Using worker: sync
+[2024-02-18 13:05:13 +0530] [25143] [INFO] Booting worker with pid: 25143
+[2024-02-18 13:05:13 +0530] [25144] [INFO] Booting worker with pid: 25144
+[2024-02-18 13:05:13 +0530] [25145] [INFO] Booting worker with pid: 25145
+[2024-02-18 07:35:54 +0000] [25144] [INFO] Worker exiting (pid: 25144)
+[2024-02-18 07:35:54 +0000] [25145] [INFO] Worker exiting (pid: 25145)
+[2024-02-18 07:35:54 +0000] [25143] [INFO] Worker exiting (pid: 25143)
+[2024-02-18 13:05:54 +0530] [25141] [INFO] Handling signal: term
+[2024-02-18 13:05:54 +0530] [25444] [INFO] Starting gunicorn 21.2.0
+[2024-02-18 13:05:54 +0530] [25444] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (25444)
+[2024-02-18 13:05:54 +0530] [25444] [INFO] Using worker: sync
+[2024-02-18 13:05:54 +0530] [25453] [INFO] Booting worker with pid: 25453
+[2024-02-18 13:05:54 +0530] [25141] [INFO] Shutting down: Master
+[2024-02-18 13:05:54 +0530] [25454] [INFO] Booting worker with pid: 25454
+[2024-02-18 13:05:54 +0530] [25455] [INFO] Booting worker with pid: 25455
+[2024-02-18 13:10:16 +0530] [1413] [INFO] Starting gunicorn 21.2.0
+[2024-02-18 13:10:16 +0530] [1413] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (1413)
+[2024-02-18 13:10:16 +0530] [1413] [INFO] Using worker: sync
+[2024-02-18 13:10:16 +0530] [1430] [INFO] Booting worker with pid: 1430
+[2024-02-18 13:10:16 +0530] [1431] [INFO] Booting worker with pid: 1431
+[2024-02-18 13:10:16 +0530] [1432] [INFO] Booting worker with pid: 1432
