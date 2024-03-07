@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block scripts %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
 <script>
     const shapes = JSON.parse('{{ shapes | safe }}');
     console.log(shapes)

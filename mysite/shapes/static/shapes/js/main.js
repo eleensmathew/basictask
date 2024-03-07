@@ -1,4 +1,9 @@
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
+//import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js';
+import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/FBXLoader.js';
+
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js'; // Updated URL
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
@@ -7,6 +12,24 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 camera.position.z = 5; //set camera on z axis and move by 5
+_LoadAnimatedModel(){
+  const loader = new FBXLoader();
+  loader.setPath('./static/mutant/mutant idle.fbx');
+}
+
+const loader = new GLTFLoader()
+const currentPath = window.location.pathname;
+console.log(currentPath); 
+loader.load('static/monster.glb', function(glb){
+    console.log("monster",glb);
+    const root=glb.scene;
+    root.scale.set(0.1,0.1,0.1);
+    scene.add(root);
+},function(xhr){
+    console.log(xhr.loaded/xhr.total *100)+"% loaded";
+},function(error){
+    console.log("error");
+})
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -54,8 +77,8 @@ for (const el of shapes) {
   scene.add(shape);
   threeJsShapes.push(shape);
 }
-const ambientLight = new THREE.AmbientLight("#ffffff",1.5);
-scene.add(ambientLight);
+// const ambientLight = new THREE.AmbientLight("#ffffff",1.5);
+// scene.add(ambientLight);
 
 const directionalLight = new THREE.DirectionalLight("#ffffff",2)
 directionalLight.position.set(1,2,3);
