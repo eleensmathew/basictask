@@ -1,7 +1,7 @@
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
 import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/FBXLoader.js";
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js"; // Updated URL
-
+import { DRACOLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/DRACOLoader.js"; // Updated URL
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   50,
@@ -19,6 +19,9 @@ console.log(currentPath);
 
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //alpha = true makes background transparent
 renderer.setSize(window.innerWidth, window.innerHeight);
+
+const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
+texture.anisotropy = maxAnisotropy;
 //renderer.setSize(200, 200); // to make character at bottom
 
 //renderer.domElement.style.position = "fixed";
@@ -37,17 +40,18 @@ let currentlyAnimating = false;
 let neck;
 let waist;
 
-let stacy_txt = new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/stacy.jpg'); //loading texture onto model
+// let stacy_txt = new THREE.TextureLoader().load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/stacy.jpg'); //loading texture onto model
 
-stacy_txt.flipY = false; // we flip the texture so that its the right way up
+// stacy_txt.flipY = false; // we flip the texture so that its the right way up
 
-const stacy_mtl = new THREE.MeshPhongMaterial({
-  map: stacy_txt,
-  color: 0xffffff,
-  skinning: true
-});
+// const stacy_mtl = new THREE.MeshPhongMaterial({
+//   map: stacy_txt,
+//   color: 0xffffff,
+//   skinning: true
+// });
+const dracoLoader = new DRACOLoader();
 const loader = new GLTFLoader();
-
+//loader.setDRACOLoader(dracoLoader);
 //circle behind her
 let geometry = new THREE.SphereGeometry(8, 32, 32);
 let material = new THREE.MeshBasicMaterial({ color: 0x9bffaf }); // 0xf2ce2e 
@@ -63,7 +67,7 @@ loaderAnim.style.backgroundColor = 'red'; //doesnt work
 
 
 //loading character
-const MODEL_PATH = "static/stacy_lightweight.glb";
+const MODEL_PATH = "static/teach1.glb";
 loader.load(MODEL_PATH, function (gltf) {
   
   scene.add(gltf.scene);
@@ -74,20 +78,20 @@ loader.load(MODEL_PATH, function (gltf) {
   let fileAnimations = gltf.animations;
 
   mixer = new THREE.AnimationMixer(gltf.scene);
-  let clips = fileAnimations.filter(val => val.name !== 'idle');//get all animtions that are not idle
-  possibleAnims = clips.map(val => {
-    let clip = THREE.AnimationClip.findByName(clips, val.name);
-    clip.tracks.splice(3, 3);  //removing neck and spine from animations so we can manipulate later
-    clip.tracks.splice(9, 3);
-    clip = mixer.clipAction(clip);
-    return clip;
-   }
-  );
+  // let clips = fileAnimations.filter(val => val.name !== 'idle');//get all animtions that are not idle
+  // possibleAnims = clips.map(val => {
+  //   let clip = THREE.AnimationClip.findByName(clips, val.name);
+  //   clip.tracks.splice(3, 3);  //removing neck and spine from animations so we can manipulate later
+  //   clip.tracks.splice(9, 3);
+  //   clip = mixer.clipAction(clip);
+  //   return clip;
+  //  }
+  //);
 
   let idleAnim = THREE.AnimationClip.findByName(fileAnimations, 'idle');
-  idleAnim.tracks.splice(3, 3); //here spine is 3, 4, 5
-  idleAnim.tracks.splice(9, 3);  //neck movement is 12 13 14 but we removed 3 4 5 so 9 10 11
-  idleAction = mixer.clipAction(idleAnim);
+  // idleAnim.tracks.splice(3, 3); //here spine is 3, 4, 5
+  // idleAnim.tracks.splice(9, 3);  //neck movement is 12 13 14 but we removed 3 4 5 so 9 10 11
+  // idleAction = mixer.clipAction(idleAnim);
   idleAction.play();
 
 
@@ -117,112 +121,112 @@ loader.load(MODEL_PATH, function (gltf) {
 
   //console.log(model);
 
-  window.addEventListener('click', e => raycast(e));
-  window.addEventListener('touchend', e => raycast(e, true));
+  // window.addEventListener('click', e => raycast(e));
+  // window.addEventListener('touchend', e => raycast(e, true));
 
-  function raycast(e, touch = false) {
-    var mouse = {};
-    if (touch) {
-      mouse.x = 2 * (e.changedTouches[0].clientX / window.innerWidth) - 1;
-      mouse.y = 1 - 2 * (e.changedTouches[0].clientY / window.innerHeight);
-    } else {
-      mouse.x = 2 * (e.clientX / window.innerWidth) - 1;
-      mouse.y = 1 - 2 * (e.clientY / window.innerHeight);
-    }
-    // update the picking ray with the camera and mouse position
-    raycaster.setFromCamera(mouse, camera);
+  // function raycast(e, touch = false) {
+  //   var mouse = {};
+  //   if (touch) {
+  //     mouse.x = 2 * (e.changedTouches[0].clientX / window.innerWidth) - 1;
+  //     mouse.y = 1 - 2 * (e.changedTouches[0].clientY / window.innerHeight);
+  //   } else {
+  //     mouse.x = 2 * (e.clientX / window.innerWidth) - 1;
+  //     mouse.y = 1 - 2 * (e.clientY / window.innerHeight);
+  //   }
+  //   // update the picking ray with the camera and mouse position
+  //   raycaster.setFromCamera(mouse, camera);
 
-    // calculate objects intersecting the picking ray
-    var intersects = raycaster.intersectObjects(scene.children, true);
+  //   // calculate objects intersecting the picking ray
+  //   var intersects = raycaster.intersectObjects(scene.children, true);
 
-    if (intersects[0]) {
-      var object = intersects[0].object;
+  //   if (intersects[0]) {
+  //     var object = intersects[0].object;
 
-      if (object.name === 'stacy') {
+  //     if (object.name === 'stacy') {
 
-        if (!currentlyAnimating) {
-          currentlyAnimating = true;
-          playOnClick();
-        }
-      }
-    }
-  }
-  function playOnClick() {  //plays random animation when clicked
-    let anim = Math.floor(Math.random() * possibleAnims.length) + 0;
-    playModifierAnimation(idleAction, 0.25, possibleAnims[anim], 0.25);
-  }
-  function playModifierAnimation(from, fSpeed, to, tSpeed) {
-    to.setLoop(THREE.LoopOnce);
-    to.reset();
-    to.play();
-    from.crossFadeTo(to, fSpeed, true);
-    setTimeout(function() {
-      from.enabled = true;
-      to.crossFadeTo(from, tSpeed, true);
-      currentlyAnimating = false;
-    }, to._clip.duration * 1000 - ((tSpeed + fSpeed) * 1000));
-  }
-  document.addEventListener('mousemove', function(e) {
-    var mousecoords = getMousePos(e);
-  });
+  //       if (!currentlyAnimating) {
+  //         currentlyAnimating = true;
+  //         playOnClick();
+  //       }
+  //     }
+  //   }
+  // }
+  // function playOnClick() {  //plays random animation when clicked
+  //   let anim = Math.floor(Math.random() * possibleAnims.length) + 0;
+  //   playModifierAnimation(idleAction, 0.25, possibleAnims[anim], 0.25);
+  // }
+  // function playModifierAnimation(from, fSpeed, to, tSpeed) {
+  //   to.setLoop(THREE.LoopOnce);
+  //   to.reset();
+  //   to.play();
+  //   from.crossFadeTo(to, fSpeed, true);
+  //   setTimeout(function() {
+  //     from.enabled = true;
+  //     to.crossFadeTo(from, tSpeed, true);
+  //     currentlyAnimating = false;
+  //   }, to._clip.duration * 1000 - ((tSpeed + fSpeed) * 1000));
+  // }
+  // document.addEventListener('mousemove', function(e) {
+  //   var mousecoords = getMousePos(e);
+  // });
     
-  function getMousePos(e) {
-    return { x: e.clientX, y: e.clientY };
-  }
-  function moveJoint(mouse, joint, degreeLimit) {
-    let degrees = getMouseDegrees(mouse.x, mouse.y, degreeLimit);
-    joint.rotation.y = THREE.Math.degToRad(degrees.x);
-    joint.rotation.x = THREE.Math.degToRad(degrees.y);
-  }
-  function getMouseDegrees(x, y, degreeLimit) {
-    let dx = 0,
-        dy = 0,
-        xdiff,
-        xPercentage,
-        ydiff,
-        yPercentage;
+  // function getMousePos(e) {
+  //   return { x: e.clientX, y: e.clientY };
+  // }
+  // function moveJoint(mouse, joint, degreeLimit) {
+  //   let degrees = getMouseDegrees(mouse.x, mouse.y, degreeLimit);
+  //   joint.rotation.y = THREE.Math.degToRad(degrees.x);
+  //   joint.rotation.x = THREE.Math.degToRad(degrees.y);
+  // }
+  // function getMouseDegrees(x, y, degreeLimit) {
+  //   let dx = 0,
+  //       dy = 0,
+  //       xdiff,
+  //       xPercentage,
+  //       ydiff,
+  //       yPercentage;
 
-    let w = { x: window.innerWidth, y: window.innerHeight };
+  //   let w = { x: window.innerWidth, y: window.innerHeight };
 
-    // Left (Rotates neck left between 0 and -degreeLimit)
+  //   // Left (Rotates neck left between 0 and -degreeLimit)
     
-      // 1. If cursor is in the left half of screen
-    if (x <= w.x / 2) {
-      // 2. Get the difference between middle of screen and cursor position
-      xdiff = w.x / 2 - x;  
-      // 3. Find the percentage of that difference (percentage toward edge of screen)
-      xPercentage = (xdiff / (w.x / 2)) * 100;
-      // 4. Convert that to a percentage of the maximum rotation we allow for the neck
-      dx = ((degreeLimit * xPercentage) / 100) * -1; }
-  // Right (Rotates neck right between 0 and degreeLimit)
-    if (x >= w.x / 2) {
-      xdiff = x - w.x / 2;
-      xPercentage = (xdiff / (w.x / 2)) * 100;
-      dx = (degreeLimit * xPercentage) / 100;
-    }
-    // Up (Rotates neck up between 0 and -degreeLimit)
-    if (y <= w.y / 2) {
-      ydiff = w.y / 2 - y;
-      yPercentage = (ydiff / (w.y / 2)) * 100;
-      // Note that I cut degreeLimit in half when she looks up
-      dy = (((degreeLimit * 0.5) * yPercentage) / 100) * -1;
-      }
+  //     // 1. If cursor is in the left half of screen
+  //   if (x <= w.x / 2) {
+  //     // 2. Get the difference between middle of screen and cursor position
+  //     xdiff = w.x / 2 - x;  
+  //     // 3. Find the percentage of that difference (percentage toward edge of screen)
+  //     xPercentage = (xdiff / (w.x / 2)) * 100;
+  //     // 4. Convert that to a percentage of the maximum rotation we allow for the neck
+  //     dx = ((degreeLimit * xPercentage) / 100) * -1; }
+  // // Right (Rotates neck right between 0 and degreeLimit)
+  //   if (x >= w.x / 2) {
+  //     xdiff = x - w.x / 2;
+  //     xPercentage = (xdiff / (w.x / 2)) * 100;
+  //     dx = (degreeLimit * xPercentage) / 100;
+  //   }
+  //   // Up (Rotates neck up between 0 and -degreeLimit)
+  //   if (y <= w.y / 2) {
+  //     ydiff = w.y / 2 - y;
+  //     yPercentage = (ydiff / (w.y / 2)) * 100;
+  //     // Note that I cut degreeLimit in half when she looks up
+  //     dy = (((degreeLimit * 0.5) * yPercentage) / 100) * -1;
+  //     }
     
-    // Down (Rotates neck down between 0 and degreeLimit)
-    if (y >= w.y / 2) {
-      ydiff = y - w.y / 2;
-      yPercentage = (ydiff / (w.y / 2)) * 100;
-      dy = (degreeLimit * yPercentage) / 100;
-    }
-    return { x: dx, y: dy };
-  }
-  document.addEventListener('mousemove', function(e) {
-    var mousecoords = getMousePos(e);
-  if (neck && waist) {
-      moveJoint(mousecoords, neck, 50);
-      moveJoint(mousecoords, waist, 30);
-  }
-  });
+  //   // Down (Rotates neck down between 0 and degreeLimit)
+  //   if (y >= w.y / 2) {
+  //     ydiff = y - w.y / 2;
+  //     yPercentage = (ydiff / (w.y / 2)) * 100;
+  //     dy = (degreeLimit * yPercentage) / 100;
+  //   }
+  //   return { x: dx, y: dy };
+  // }
+  // document.addEventListener('mousemove', function(e) {
+  //   var mousecoords = getMousePos(e);
+  // if (neck && waist) {
+  //     moveJoint(mousecoords, neck, 50);
+  //     moveJoint(mousecoords, waist, 30);
+  // }
+  // });
 
   // window.addEventListener(
   //   "dblclick",

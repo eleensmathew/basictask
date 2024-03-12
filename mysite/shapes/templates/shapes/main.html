@@ -6,6 +6,7 @@
 <script>
     const shapes = JSON.parse('{{ shapes | safe }}');
     console.log(shapes)
+    console.log("op");
 </script>
 <script type = "module" src="{% static 'shapes/js/main.js' %}" defer> </script>
 {% endblock scripts %}

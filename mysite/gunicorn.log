@@ -1,0 +1,62 @@
+[2024-03-11 10:47:45 +0530] [36960] [INFO] Starting gunicorn 21.2.0
+[2024-03-11 10:47:45 +0530] [36960] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (36960)
+[2024-03-11 10:47:45 +0530] [36960] [INFO] Using worker: sync
+[2024-03-11 10:47:45 +0530] [36962] [INFO] Booting worker with pid: 36962
+[2024-03-11 10:47:45 +0530] [36963] [INFO] Booting worker with pid: 36963
+[2024-03-11 10:47:45 +0530] [36964] [INFO] Booting worker with pid: 36964
+[2024-03-11 11:01:08 +0530] [36960] [INFO] Handling signal: term
+[2024-03-11 05:31:08 +0000] [36963] [INFO] Worker exiting (pid: 36963)
+[2024-03-11 05:31:08 +0000] [36962] [INFO] Worker exiting (pid: 36962)
+[2024-03-11 05:31:08 +0000] [36964] [INFO] Worker exiting (pid: 36964)
+[2024-03-11 11:01:08 +0530] [42856] [INFO] Starting gunicorn 21.2.0
+[2024-03-11 11:01:08 +0530] [42856] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (42856)
+[2024-03-11 11:01:08 +0530] [42856] [INFO] Using worker: sync
+[2024-03-11 11:01:08 +0530] [42859] [INFO] Booting worker with pid: 42859
+[2024-03-11 11:01:08 +0530] [42863] [INFO] Booting worker with pid: 42863
+[2024-03-11 11:01:08 +0530] [42866] [INFO] Booting worker with pid: 42866
+[2024-03-11 11:01:08 +0530] [36960] [INFO] Shutting down: Master
+[2024-03-11 11:09:26 +0530] [42856] [INFO] Handling signal: term
+[2024-03-11 05:39:26 +0000] [42859] [INFO] Worker exiting (pid: 42859)
+[2024-03-11 05:39:26 +0000] [42863] [INFO] Worker exiting (pid: 42863)
+[2024-03-11 05:39:26 +0000] [42866] [INFO] Worker exiting (pid: 42866)
+[2024-03-11 11:09:27 +0530] [46133] [INFO] Starting gunicorn 21.2.0
+[2024-03-11 11:09:27 +0530] [46133] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (46133)
+[2024-03-11 11:09:27 +0530] [46133] [INFO] Using worker: sync
+[2024-03-11 11:09:27 +0530] [46135] [INFO] Booting worker with pid: 46135
+[2024-03-11 11:09:27 +0530] [46136] [INFO] Booting worker with pid: 46136
+[2024-03-11 11:09:27 +0530] [46137] [INFO] Booting worker with pid: 46137
+[2024-03-11 11:09:27 +0530] [42856] [INFO] Shutting down: Master
+[2024-03-11 05:43:08 +0000] [46137] [INFO] Worker exiting (pid: 46137)
+[2024-03-11 11:13:08 +0530] [46133] [INFO] Handling signal: term
+[2024-03-11 05:43:08 +0000] [46135] [INFO] Worker exiting (pid: 46135)
+[2024-03-11 05:43:08 +0000] [46136] [INFO] Worker exiting (pid: 46136)
+[2024-03-11 11:13:08 +0530] [47863] [INFO] Starting gunicorn 21.2.0
+[2024-03-11 11:13:08 +0530] [47863] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (47863)
+[2024-03-11 11:13:08 +0530] [47863] [INFO] Using worker: sync
+[2024-03-11 11:13:08 +0530] [47865] [INFO] Booting worker with pid: 47865
+[2024-03-11 11:13:08 +0530] [46133] [INFO] Shutting down: Master
+[2024-03-11 11:13:08 +0530] [47866] [INFO] Booting worker with pid: 47866
+[2024-03-11 11:13:08 +0530] [47867] [INFO] Booting worker with pid: 47867
+[2024-03-11 05:49:16 +0000] [47866] [INFO] Worker exiting (pid: 47866)
+[2024-03-11 11:19:16 +0530] [47863] [INFO] Handling signal: term
+[2024-03-11 05:49:16 +0000] [47867] [INFO] Worker exiting (pid: 47867)
+[2024-03-11 05:49:16 +0000] [47865] [INFO] Worker exiting (pid: 47865)
+[2024-03-11 11:19:16 +0530] [50485] [INFO] Starting gunicorn 21.2.0
+[2024-03-11 11:19:16 +0530] [50485] [INFO] Listening at: unix:/home/eleensmathew/gunicorn.sock (50485)
+[2024-03-11 11:19:16 +0530] [50485] [INFO] Using worker: sync
+[2024-03-11 11:19:16 +0530] [50487] [INFO] Booting worker with pid: 50487
+[2024-03-11 11:19:16 +0530] [47863] [INFO] Shutting down: Master
+[2024-03-11 11:19:16 +0530] [50488] [INFO] Booting worker with pid: 50488
+[2024-03-11 11:19:16 +0530] [50489] [INFO] Booting worker with pid: 50489
+[2024-03-11 18:21:37 +0530] [50485] [CRITICAL] WORKER TIMEOUT (pid:50487)
+[2024-03-11 18:21:38 +0530] [50485] [CRITICAL] WORKER TIMEOUT (pid:50488)
+[2024-03-11 18:21:38 +0530] [50485] [CRITICAL] WORKER TIMEOUT (pid:50489)
+[2024-03-11 12:51:38 +0000] [50488] [INFO] Worker exiting (pid: 50488)
+[2024-03-11 12:51:38 +0000] [50489] [INFO] Worker exiting (pid: 50489)
+[2024-03-11 12:51:38 +0000] [50487] [INFO] Worker exiting (pid: 50487)
+[2024-03-11 18:21:39 +0530] [50485] [ERROR] Worker (pid:50488) was sent SIGKILL! Perhaps out of memory?
+[2024-03-11 18:21:39 +0530] [50485] [ERROR] Worker (pid:50489) was sent SIGKILL! Perhaps out of memory?
+[2024-03-11 18:21:39 +0530] [50485] [ERROR] Worker (pid:50487) was sent SIGKILL! Perhaps out of memory?
+[2024-03-11 18:21:39 +0530] [114550] [INFO] Booting worker with pid: 114550
+[2024-03-11 18:21:39 +0530] [114551] [INFO] Booting worker with pid: 114551
+[2024-03-11 18:21:39 +0530] [114552] [INFO] Booting worker with pid: 114552
